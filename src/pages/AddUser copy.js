@@ -19,14 +19,8 @@ import {
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
-// ----------------------------------------------------------------------
-
-
 export default function AddUser() {
-
   const navigate = useNavigate()
-
   const [username, setusername] = useState("");
   const [firstname, setfirstname] = useState("");
   const [lastname, setlastname] = useState("");
@@ -58,15 +52,12 @@ export default function AddUser() {
             Add User
           </Typography>
         </Stack>
-
         <Card>
-
           <Box
             component="form"
             noValidate
             autoComplete="off"
           >
-
             <div>
               <TextField
                 error={false}
